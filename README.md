@@ -13,17 +13,14 @@ garantir que o Python está instalado
 instalar o scan Nmap, instalar o analisador Wireshark
 preparar e executar o script.
 
-Aqui está um guia passo a passo, com instruções para Windows e Linux.
-
-Resumo dos Passos:
-Instalar o Python: A linguagem de programação que executa nosso script.
-Instalar o Nmap: A ferramenta essencial que realiza o escaneamento de rede.
-Instalar o Wireshark: A ferramenta para visualizar o tráfego de rede gerado pelo scan.
-Baixar o Script e Instalar Dependências: Preparar o ambiente final para rodar a aplicação.
+Passo a passo, com instruções para Windows e Linux.
+1- Instalar o Python: A linguagem de programação que executa o script.
+2- Instalar o Nmap: A ferramenta essencial que realiza o escaneamento de rede.
+3- Instalar o Wireshark: A ferramenta para visualizar o tráfego de rede gerado pelo scan.
+4- Baixar o Script e Instalar Dependências: Preparar o ambiente final para rodar o script.
 
 Passo 1: Instalar o Python
 É muito provável que você já tenha o Python. Para verificar, abra o terminal (Prompt de Comando ou PowerShell no Windows) e digite:
-
 python --version
 Se ele mostrar uma versão (ex: Python 3.13.3),
 você tem o Python instalado.
@@ -39,7 +36,6 @@ Prossiga com a instalação padrão.
 
 No Linux (Debian/Ubuntu):
 O Python geralmente já vem instalado. Caso não venha, é muito simples de instalar via terminal:
-
 sudo apt update
 sudo apt install python3 python3-pip
 
@@ -54,7 +50,6 @@ Não precisa alterar nenhuma opção, a instalação padrão é suficiente e já
 
 No Linux (Debian/Ubuntu):
 Instale diretamente pelo terminal com um único comando:
-
 sudo apt update
 sudo apt install nmap
 Verificação: Após a instalação, abra um novo terminal e digite nmap --version.
@@ -66,12 +61,11 @@ Este passo é opcional, necessário apenas se você quiser usar a funcionalidade
 No Windows:
 Vá para a página de download do Wireshark: https://www.wireshark.org/download.html
 Baixe o instalador para Windows (64-bit).
-Execute o instalador. Durante o processo, ele perguntará se deseja instalar o Npcap. Diga que sim, pois este é o componente que efetivamente captura os pacotes de rede.
+Execute o instalador, durante o processo, ele perguntará se deseja instalar o Npcap, diga que sim, pois este é o componente que efetivamente captura os pacotes de rede.
 Prossiga com as opções padrão.
 
 No Linux (Debian/Ubuntu):
 Instale pelo terminal:
-
 sudo apt update
 sudo apt install wireshark
 Durante a instalação, uma tela azul aparecerá perguntando: "Deverão os não-superusuários ser capazes de capturar pacotes?".
@@ -102,12 +96,11 @@ a. Abra o terminal.
 b. Navegue até a pasta do script.
 c. Execute o script usando sudo
 
-A interface gráfica do Scanner de Portas Avançado deverá abrir, e agora você está pronto para usá-lo com todo o poder do Nmap e do Wireshark!
+A interface gráfica do Scanner de Portas Avançado deverá abrir, e agora você está pronto para usar.
 O script cria e salva os logs em uma pasta para posteriormente fazer uma analise mais detalhatada e minunciosa.
 
 # Funcionalidade:
 o Nmap é a ferramenta de ação que sonda ativamente a rede, enquanto o Wireshark é a ferramenta de observação que fornece um registro detalhado e uma análise profunda dessa ação e de suas consequências.
-Juntos, eles formam uma combinação poderosa para qualquer pessoa envolvida com a administração, o monitoramento e a segurança de redes de computadores.
 
 # Tecnologias usadas:
 Linguagem Python, Nmap e Wireshark
